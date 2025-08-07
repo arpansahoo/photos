@@ -6,9 +6,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row justify-between items-center">
           <div className="mb-4 sm:mb-0">
-            <p className="text-warm-gray font-light">&copy; 2024 Arpan Sahoo Photography. All rights reserved.</p>
+            <p className="text-warm-gray font-light">&copy; 2025 Sahoo Photography</p>
           </div>
-          <div className="flex space-x-6">
+          {/* <div className="flex space-x-6">
             <a 
               href="#" 
               className="text-warm-gray hover:text-charcoal transition-colors duration-200"
@@ -32,7 +32,7 @@ export default function Footer() {
             >
               <Instagram className="w-5 h-5" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

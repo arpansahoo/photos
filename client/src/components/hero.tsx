@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="code-snippet" style={{ top: '10%', animationDelay: '0s' }}>const photo = captureMemory();</div>
         <div className="code-snippet" style={{ top: '30%', animationDelay: '5s' }}>function developImage() &#123; return magic; &#125;</div>
         <div className="code-snippet" style={{ top: '50%', animationDelay: '10s' }}>if (moment.isBeautiful) capture();</div>
-        <div className="code-snippet" style={{ top: '70%', animationDelay: '15s' }}>const lens = new Camera(&#123; aperture: 'f/1.4' &#125;);</div>
+        <div className="code-snippet" style={{ top: '70%', animationDelay: '15s' }}>const cam = new Camera(&#123; brand: 'Sony', lens: new Lens(&#123; aperture: 'f/1.8' &#125;) &#125;);</div>
         
         <Camera className="camera-float" size={48} style={{ top: '15%', right: '10%', animationDelay: '0s' }} />
         <Code2 className="camera-float" size={40} style={{ top: '60%', left: '5%', animationDelay: '2s' }} />
@@ -28,13 +28,10 @@ export default function Hero() {
           <Code2 className="text-secondary" size={48} />
         </div>
         <h2 className="text-4xl lg:text-6xl font-light text-charcoal mb-6 tracking-tight">
-          Where <span className="text-primary font-medium">Photography</span>
-          <br />
-          Meets <span className="text-secondary font-medium">Code</span>
+          <span className="text-primary font-medium">Sahoo</span> <span className="text-secondary font-medium">Photography</span>
         </h2>
-        <p className="text-xl text-warm-gray font-light leading-relaxed max-w-2xl mx-auto">
-          Professional photographer and developer, crafting visual stories and digital experiences. 
-          Combining the art of photography with the logic of code to create something extraordinary.
+        <p className="text-xl text-warm-gray font-light leading-relaxed mx-auto">
+          Photographer and developer, crafting visual stories and digital experiences
         </p>
         <div className="mt-10">
           <button 

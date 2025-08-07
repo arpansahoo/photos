@@ -12,7 +12,7 @@ export default function VideoGallery() {
       <section id="videos" className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h3 className="text-3xl font-light text-charcoal mb-4">Video Portfolio</h3>
+            <h3 className="text-3xl font-light text-charcoal mb-4">Featured Videos</h3>
             <p className="text-red-600">Failed to load videos. Please try again later.</p>
           </div>
         </div>
@@ -33,10 +33,9 @@ export default function VideoGallery() {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Play className="text-primary" size={28} />
-            <h3 className="text-3xl font-light text-charcoal">Video Portfolio</h3>
+            <h3 className="text-3xl font-light text-charcoal">Featured Videos</h3>
             <Code className="text-secondary" size={28} />
           </div>
-          <p className="text-warm-gray font-light">Cinematography meets creative coding</p>
         </div>
         
         {isLoading ? (

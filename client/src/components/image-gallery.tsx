@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Terminal } from "lucide-react";
 import ImageModal from "./image-modal";
 import type { Image } from "@shared/schema";
 
@@ -42,12 +42,10 @@ export default function ImageGallery() {
         <div className="code-pattern absolute inset-0 opacity-20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-light text-charcoal mb-4">
-              Featured Work
+            <h3 className="flex items-center justify-center gap-3 mb-6">
+              <Terminal className="text-primary" size={28} />
+              <h3 className="text-3xl font-light text-charcoal">Featured Photos</h3>
             </h3>
-            <p className="text-warm-gray font-light">
-              A collection of my recent photography projects
-            </p>
           </div>
 
           {isLoading ? (

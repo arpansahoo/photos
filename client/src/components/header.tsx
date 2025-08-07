@@ -7,7 +7,15 @@ export default function Header() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // scroll a few pixels above the section to account for fixed header
+      const offset = 40; // adjust this value based on your header height
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: elementPosition, behavior: 'smooth' });
+      // Alternatively, you can use element.scrollIntoView
+      // element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // if you want to use scrollIntoView, you can uncomment the line below
+      //  
+      // element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     setIsMenuOpen(false);
   };
@@ -18,7 +26,7 @@ export default function Header() {
         <div className="flex justify-between items-center py-6">
           <div>
             <h1 className="text-2xl font-bold text-charcoal tracking-tight">Arpan Sahoo</h1>
-            <p className="text-warm-gray text-sm font-light">Photography × Code</p>
+            <p className="text-warm-gray text-sm font-light">Photography</p>
           </div>
           
           <nav className="hidden sm:flex space-x-8">
@@ -40,58 +48,16 @@ export default function Header() {
             >
               About
             </button>
-            <button 
+            {/* <button 
               onClick={() => scrollToSection('contact')}
               className="text-warm-gray hover:text-charcoal transition-colors duration-200 font-medium"
             >
               Contact
-            </button>
+            </button> */}
           </nav>
           
-          <button 
-            className="sm:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle mobile menu"
-          >
-            {isMenuOpen ? (
-              <X className="w-6 h-6 text-warm-gray" />
-            ) : (
-              <Menu className="w-6 h-6 text-warm-gray" />
-            )}
-          </button>
         </div>
         
-        {/* Mobile menu */}
-        {isMenuOpen && (
-          <div className="sm:hidden pb-4">
-            <nav className="flex flex-col space-y-4">
-              <button 
-                onClick={() => scrollToSection('gallery')}
-                className="text-warm-gray hover:text-charcoal transition-colors duration-200 font-medium text-left"
-              >
-                Gallery
-              </button>
-              <button 
-                onClick={() => scrollToSection('videos')}
-                className="text-warm-gray hover:text-charcoal transition-colors duration-200 font-medium text-left"
-              >
-                Videos
-              </button>
-              <button 
-                onClick={() => scrollToSection('about')}
-                className="text-warm-gray hover:text-charcoal transition-colors duration-200 font-medium text-left"
-              >
-                About
-              </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="text-warm-gray hover:text-charcoal transition-colors duration-200 font-medium text-left"
-              >
-                Contact
-              </button>
-            </nav>
-          </div>
-        )}
       </div>
     </header>
   );
