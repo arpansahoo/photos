@@ -1,0 +1,98 @@
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+
+export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    setIsMenuOpen(false);
+  };
+
+  return (
+    <header className="bg-white shadow-sm sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-6">
+          <div>
+            <h1 className="text-2xl font-bold text-charcoal tracking-tight">Arpan Sahoo</h1>
+            <p className="text-warm-gray text-sm font-light">Photography × Code</p>
+          </div>
+          
+          <nav className="hidden sm:flex space-x-8">
+            <button 
+              onClick={() => scrollToSection('gallery')}
+              className="text-warm-gray hover:text-charcoal transition-colors duration-200 font-medium"
+            >
+              Gallery
+            </button>
+            <button 
+              onClick={() => scrollToSection('videos')}
+              className="text-warm-gray hover:text-charcoal transition-colors duration-200 font-medium"
+            >
+              Videos
+            </button>
+            <button 
+              onClick={() => scrollToSection('about')}
+              className="text-warm-gray hover:text-charcoal transition-colors duration-200 font-medium"
+            >
+              About
+            </button>
+            <button 
+              onClick={() => scrollToSection('contact')}
+              className="text-warm-gray hover:text-charcoal transition-colors duration-200 font-medium"
+            >
+              Contact
+            </button>
+          </nav>
+          
+          <button 
+            className="sm:hidden p-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle mobile menu"
+          >
+            {isMenuOpen ? (
+              <X className="w-6 h-6 text-warm-gray" />
+            ) : (
+              <Menu className="w-6 h-6 text-warm-gray" />
+            )}
+          </button>
+        </div>
+        
+        {/* Mobile menu */}
+        {isMenuOpen && (
+          <div className="sm:hidden pb-4">
+            <nav className="flex flex-col space-y-4">
+              <button 
+                onClick={() => scrollToSection('gallery')}
+                className="text-warm-gray hover:text-charcoal transition-colors duration-200 font-medium text-left"
+              >
+                Gallery
+              </button>
+              <button 
+                onClick={() => scrollToSection('videos')}
+                className="text-warm-gray hover:text-charcoal transition-colors duration-200 font-medium text-left"
+              >
+                Videos
+              </button>
+              <button 
+                onClick={() => scrollToSection('about')}
+                className="text-warm-gray hover:text-charcoal transition-colors duration-200 font-medium text-left"
+              >
+                About
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')}
+                className="text-warm-gray hover:text-charcoal transition-colors duration-200 font-medium text-left"
+              >
+                Contact
+              </button>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+}
