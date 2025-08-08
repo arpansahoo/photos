@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "npx vite dev",
     "build": "npx vite build",
-    "preview": "npx vite preview"
+    "preview": "npx vite preview",
+    "deploy": "npx gh-pages -d dist"
   },
+  "homepage": "https://arpansahoo.github.io/photos/",
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@jridgewell/trace-mapping": "^0.3.25",
