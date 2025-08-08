@@ -1,40 +1,15 @@
-import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { ChevronDown, Terminal } from "lucide-react";
 import ImageModal from "./image-modal";
 import type { Image } from "@shared/schema";
+import { images } from "../data/images";
 
 export default function ImageGallery() {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
   const [visibleCount, setVisibleCount] = useState(12);
 
-  const {
-    data: images,
-    isLoading,
-    error,
-  } = useQuery<Image[]>({
-    queryKey: ["/api/images"],
-  });
-
-  if (error) {
-    return (
-      <section id="gallery" className="py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h3 className="text-3xl font-light text-charcoal mb-4">
-              Featured Work
-            </h3>
-            <p className="text-red-600">
-              Failed to load images. Please try again later.
-            </p>
-          </div>
-        </div>
-      </section>
-    );
-  }
-
-  const visibleImages = images?.slice(0, visibleCount) || [];
-  const hasMoreImages = images && images.length > visibleCount;
+  const visibleImages = images.slice(0, visibleCount);
+  const hasMoreImages = images.length > visibleCount;
 
   return (
     <>
@@ -48,38 +23,28 @@ export default function ImageGallery() {
             </h3>
           </div>
 
-          {isLoading ? (
-            <div className="image-grid">
-              {Array.from({ length: 12 }).map((_, index) => (
-                <div key={index} className="image-item">
-                  <div className="w-full h-full bg-gray-200 animate-pulse rounded-lg" />
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="image-grid" id="photoGrid">
-              {visibleImages.map((image) => (
-                <div
-                  key={image.id}
-                  className="image-item"
-                  onClick={() => setSelectedImage(image)}
-                >
-                  <img
-                    src={image.imageUrl}
-                    alt={image.alt}
-                    loading="lazy"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="image-overlay">
-                    <div className="text-white text-center">
-                      <p className="font-medium">{image.title}</p>
-                      <p className="text-sm opacity-90">{image.category}</p>
-                    </div>
+          <div className="image-grid" id="photoGrid">
+            {visibleImages.map((image) => (
+              <div
+                key={image.id}
+                className="image-item"
+                onClick={() => setSelectedImage(image)}
+              >
+                <img
+                  src={image.imageUrl}
+                  alt={image.alt}
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
+                <div className="image-overlay">
+                  <div className="text-white text-center">
+                    <p className="font-medium">{image.title}</p>
+                    <p className="text-sm opacity-90">{image.category}</p>
                   </div>
                 </div>
-              ))}
-            </div>
-          )}
+              </div>
+            ))}
+          </div>
 
           {hasMoreImages && (
             <div className="text-center mt-12">

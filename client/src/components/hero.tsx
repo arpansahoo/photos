@@ -13,9 +13,9 @@ export default function Hero() {
       {/* Floating background elements */}
       <div className="floating-elements">
         <div className="code-snippet" style={{ top: '10%', animationDelay: '0s' }}>const photo = captureMemory();</div>
-        <div className="code-snippet" style={{ top: '30%', animationDelay: '5s' }}>function developImage() &#123; return magic; &#125;</div>
-        <div className="code-snippet" style={{ top: '50%', animationDelay: '10s' }}>if (moment.isBeautiful) capture();</div>
-        <div className="code-snippet" style={{ top: '70%', animationDelay: '15s' }}>const cam = new Camera(&#123; brand: 'Sony', lens: new Lens(&#123; aperture: 'f/1.8' &#125;) &#125;);</div>
+        <div className="code-snippet" style={{ top: '30%', animationDelay: '3s' }}>function developImage() &#123; return magic; &#125;</div>
+        <div className="code-snippet" style={{ top: '50%', animationDelay: '6s' }}>if (moment.isBeautiful) capture();</div>
+        <div className="code-snippet" style={{ top: '70%', animationDelay: '9s' }}>const cam = new Camera(&#123; brand: 'Sony', lens: new Lens(&#123; aperture: 'f/1.8' &#125;) &#125;);</div>
         
         <Camera className="camera-float" size={48} style={{ top: '15%', right: '10%', animationDelay: '0s' }} />
         <Code2 className="camera-float" size={40} style={{ top: '60%', left: '5%', animationDelay: '2s' }} />

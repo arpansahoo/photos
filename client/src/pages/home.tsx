@@ -2,8 +2,6 @@ import Header from "@/components/header";
 import Hero from "@/components/hero";
 import ImageGallery from "@/components/image-gallery";
 import VideoGallery from "@/components/video-gallery";
-import About from "@/components/about";
-import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 
 export default function Home() {
@@ -14,8 +12,6 @@ export default function Home() {
         <Hero />
         <ImageGallery />
         <VideoGallery />
-        <About />
-        {/* <Contact /> */}
       </main>
       <Footer />
     </div>
