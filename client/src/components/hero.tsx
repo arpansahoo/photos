@@ -4,7 +4,9 @@ export default function Hero() {
   const scrollToGallery = () => {
     const element = document.getElementById('gallery');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const offset = 40; // adjust this value based on your header height
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: elementPosition, behavior: 'smooth' });
     }
   };
 
@@ -31,7 +33,7 @@ export default function Hero() {
           <span className="text-primary font-medium">Sahoo</span> <span className="text-secondary font-medium">Photography</span>
         </h2>
         <p className="text-xl text-warm-gray font-light leading-relaxed mx-auto">
-          Photographer and developer, crafting visual stories and digital experiences!
+          Photographer and developer, crafting visual stories and digital experiences
         </p>
         <div className="mt-10">
           <button 
