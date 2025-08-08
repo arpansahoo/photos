@@ -33,6 +33,5 @@ export default defineConfig({
       strict: true,
       deny: ["**/.*"],
     },
-  },
-  base: "/photos/",
+  }
 });
