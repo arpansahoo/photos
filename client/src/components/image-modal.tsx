@@ -47,11 +47,16 @@ export default function ImageModal({
       onClick={onClose}
     >
       <button
-        onClick={onClose}
-        className="absolute top-4 right-4 text-white hover:opacity-70 transition-opacity z-51"
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          onClose();
+        }}
+        className="absolute top-4 right-4 text-white hover:text-gray-300 transition-all duration-200 z-[70] bg-black bg-opacity-60 hover:bg-opacity-80 rounded-full p-2 shadow-lg backdrop-blur-sm"
+        style={{ pointerEvents: 'auto' }}
         aria-label="Close modal"
       >
-        <X size={40} />
+        <X size={24} strokeWidth={2.5} />
       </button>
 
       {/* Previous Button */}
