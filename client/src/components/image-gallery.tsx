@@ -105,7 +105,7 @@ export default function ImageGallery() {
                 className="inline-flex items-center px-6 py-3 border border-charcoal text-charcoal font-medium rounded-md hover:bg-charcoal hover:text-white transition-colors duration-200"
               >
                 Load More Images
-                <ChevronDown className="ml-2 w-4 h-4 rotate-180" />
+                <ChevronDown className="ml-2 w-4 h-4" />
               </button>
             </div>
           )}

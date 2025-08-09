@@ -1,23 +1,23 @@
 import type { Image } from "@shared/schema";
-import BeachAlley from "./images/photo-beachalley.jpg";
-import BeachBoatSunset from "./images/photo-beachboatsunset.jpg";
-import BernCityScape from "./images/photo-berncityscape.jpg";
-import Buddybrew from "./images/photo-Buddybrew.jpg";
-import Eiffel from "./images/photo-Eiffel.jpg";
-import Ekiben from "./images/photo-Ekiben.jpg";
-import Ferrari from "./images/photo-Ferrari.jpg";
-import FerrisWheel from "./images/photo-FerrisWheel.jpg";
-import GreenBikes from "./images/photo-GreenBikes.jpg";
-import LauterbrunnenValley from "./images/photo-LauterbrunnenValley.jpg";
-import MetSculpture from "./images/photo-MetSculpture.jpg";
-import ParisStreetLight from "./images/photo-ParisStreetLight.jpg";
-import Peabody from "./images/photo-Peabody.jpg";
-import Pilatus from "./images/photo-Pilatus.jpg";
-import Pilatuscloseup from "./images/photo-Pilatuscloseup.jpg";
-import Seaman from "./images/photo-seaman.jpg";
-import Soho from "./images/photo-Soho.jpg";
-import SunsetBirds from "./images/photo-SunsetBirds.jpg";
-import BernStatue from "./images/photo-bernstatue.jpg";
+import BeachAlley from "./images/photo-01.jpg";
+import BeachBoatSunset from "./images/photo-03.jpg";
+import BernCityScape from "./images/photo-04.jpg";
+import Buddybrew from "./images/photo-10.jpg";
+import Eiffel from "./images/photo-14.jpg";
+import Ekiben from "./images/photo-18.jpg";
+import Ferrari from "./images/photo-11.jpg";
+import FerrisWheel from "./images/photo-15.jpg";
+import GreenBikes from "./images/photo-13.jpg";
+import LauterbrunnenValley from "./images/photo-06.jpg";
+import MetSculpture from "./images/photo-16.jpg";
+import ParisStreetLight from "./images/photo-12.jpg";
+import Peabody from "./images/photo-19.jpg";
+import Pilatus from "./images/photo-07.jpg";
+import Pilatuscloseup from "./images/photo-08.jpg";
+import Seaman from "./images/photo-02.jpg";
+import Soho from "./images/photo-17.jpg";
+import SunsetBirds from "./images/photo-09.jpg";
+import BernStatue from "./images/photo-05.jpg";
 
 export const images: Image[] = [
   {
