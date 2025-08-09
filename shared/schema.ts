@@ -16,7 +16,7 @@ export interface Image extends InsertImage {
 
 export const insertVideoSchema = z.object({
   title: z.string().min(1, "Title is required"),
-  category: z.string().min(1, "Category is required"),
+  // category: z.string().min(1, "Category is required"),
   youtubeId: z.string().min(1, "YouTube ID is required"),
   description: z.string().optional(),
 });

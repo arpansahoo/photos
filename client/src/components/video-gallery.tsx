@@ -37,7 +37,7 @@ export default function VideoGallery() {
               </div>
               <div className="mt-4">
                 <h4 className="text-lg font-medium text-charcoal">{video.title}</h4>
-                <p className="text-warm-gray text-sm mt-1">{video.category}</p>
+                {/* <p className="text-warm-gray text-sm mt-1">{video.category}</p> */}
                 {video.description && (
                   <p className="text-warm-gray text-sm mt-2 leading-relaxed">{video.description}</p>
                 )}

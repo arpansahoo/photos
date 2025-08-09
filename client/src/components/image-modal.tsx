@@ -118,7 +118,7 @@ export default function ImageModal({
             onLoad={handleImageLoad}
             src={image.imageUrl}
             alt={image.title}
-            className={`max-w-full max-h-full w-auto h-auto object-contain rounded-lg shadow-2xl transition duration-200 ease-in-out ${loading ? "blur-lg opacity-50" : "blur-0 opacity-100"}`}
+            className={`max-w-full max-h-full w-auto h-auto object-contain rounded-lg shadow-2xl transition duration-200 ease-in-out ${loading ? "blur-lg opacity-100" : "blur-0 opacity-100"}`}
             onClick={(e) => e.stopPropagation()}
           />
         </div>

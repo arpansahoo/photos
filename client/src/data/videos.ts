@@ -3,44 +3,23 @@ import type { Video } from "@shared/schema";
 export const videos: Video[] = [
   {
     id: "1",
-    title: "Cinematic Wedding Film",
-    category: "Wedding Films",
-    youtubeId: "VNQjFUCnNoo",
-    description: "A beautiful wedding cinematography showcase with stunning visuals"
+    title: "Milkshake Mondays Promo",
+    // category: "Wedding Films",
+    youtubeId: "Z0ACXBVIdgY",
+    description: "Some of my friends at Hopkins wanted to make a promo video for their weekly Milkshake Mondays event, so I helped them out! I miss those $2 milkshakes."
   },
   {
     id: "2",
-    title: "Portrait Photography Tutorial",
-    category: "Studio Work",
-    youtubeId: "Qe10ExwzCqk",
-    description: "Professional portrait photography techniques and lighting setup"
+    title: "Welcome to Hopkins",
+    // category: "Studio Work",
+    youtubeId: "4TKm4owEc1Q",
+    description: "I was hired to make a short congratulatory video for an incoming class at Hopkins. I actually made some lifelong friends by randomly asking them to be in the video."
   },
   {
     id: "3",
-    title: "Landscape Photography in Iceland",
-    category: "Travel",
-    youtubeId: "3AtDnEC4zak",
-    description: "Capturing breathtaking landscapes in Iceland's dramatic scenery"
-  },
-  {
-    id: "4",
-    title: "Street Photography Workshop",
-    category: "Tutorial",
-    youtubeId: "UjyOCG5cfCE",
-    description: "Learn street photography techniques and composition tips"
-  },
-  {
-    id: "5",
-    title: "Behind the Scenes: Fashion Shoot",
-    category: "Fashion",
-    youtubeId: "W2Wnvvj33Wo",
-    description: "Go behind the scenes of a professional fashion photography session"
-  },
-  {
-    id: "6",
-    title: "Macro Photography Techniques",
-    category: "Nature",
-    youtubeId: "1SiAkmOpNLU",
-    description: "Explore the world of macro photography and close-up techniques"
+    title: "The Challenge of Residency",
+    // category: "Travel",
+    youtubeId: "4_3-QBgH8Fs",
+    description: "We created a video showcasing the busy life of a resident to highlight the need for engaging, efficient learning tools. We got Top 10 at MedHacks for our idea, got $30k in grant funding, and published a research paper."
   }
 ];
