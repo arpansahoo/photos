@@ -24,7 +24,7 @@ export const images: Image[] = [
     id: "1",
     title: "Amber Hour on the Shore",
     imageUrl: BeachAlley,
-    description: "Took this at a boardwalk in New Jersey. My friends at USF hate on Jersey, but I don't know..."
+    description: "Took this at a boardwalk in New Jersey. My friends in Florida hate on Jersey, but I don't know..."
   },
   {
     id: "2",
@@ -60,7 +60,7 @@ export const images: Image[] = [
     id: "7",
     title: "Bern Cityscape",
     imageUrl: BernCityScape,
-    description: "Bern, the federal city of Switzerland, is a beautiful place to walk through. They also have a bear pit!"
+    description: "Bern, the federal city of Switzerland, is a beautiful place to walk through. They also have a bear pit, not pictured here."
   },
   {
     id: "8",
@@ -108,7 +108,7 @@ export const images: Image[] = [
     id: "15",
     title: "Peabody Library",
     imageUrl: Peabody,
-    description: "Peabody Library in Baltimore, Maryland. Photo featured on the front page of The Johns Hopkins News-letter and won 3rd place in a Hopkins photo contest."
+    description: "Peabody Library in Baltimore. Photo featured on the front page of The Johns Hopkins News-letter and won 3rd place in a Hopkins photo contest."
   },
   {
     id: "16",
@@ -120,7 +120,7 @@ export const images: Image[] = [
     id: "17",
     title: "Buddy Brew",
     imageUrl: Buddybrew,
-    description: "Buddy Brew Coffee in Tampa, FL. Went with my buddy. I think I watched the entire Pathoma GI chapter while drinking a cold brew here."
+    description: "Buddy Brew Coffee in Tampa. Went with my buddy. I watched the entire Pathoma GI chapter while drinking a cold brew here."
   },
   {
     id: "18",
@@ -132,6 +132,6 @@ export const images: Image[] = [
     id: "19",
     title: "Freedom",
     imageUrl: SunsetBirds,
-    description: "Clearwater Beach, FL. Tried my hardest to capture the silhouette of birds flying by at sunset. This photo is last because I have to defend Jersey."
+    description: "Clearwater Beach, FL. I tried to capture the birds' silhouettes against the burning sky. This photo is last because I have to defend Jersey, but I must admit the sunsets in Florida are beautiful."
   },
 ];

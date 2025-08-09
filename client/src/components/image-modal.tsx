@@ -20,6 +20,18 @@ export default function ImageModal({
   hasPrevious = false 
 }: ImageModalProps) {
   const [loading, setLoading] = useState(true);
+  const [displayedImage, setDisplayedImage] = useState(image);
+  
+  // Reset loading state when image changes
+  useEffect(() => {
+    setLoading(true);
+  }, [image.id]);
+  
+  // Update displayed image only after new image loads
+  const handleImageLoad = () => {
+    setLoading(false);
+    setDisplayedImage(image);
+  };
   
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -103,19 +115,19 @@ export default function ImageModal({
         <div className="flex-1 flex items-center justify-center min-h-0">
           <img
             loading="lazy"
-            onLoad={() => setLoading(false)}
+            onLoad={handleImageLoad}
             src={image.imageUrl}
-            className={`max-w-full max-h-full w-auto h-auto object-contain rounded-lg shadow-2xl transition duration-100 ease-in-out ${loading ? "blur-lg" : "blur-0"}`}
+            alt={image.title}
+            className={`max-w-full max-h-full w-auto h-auto object-contain rounded-lg shadow-2xl transition duration-200 ease-in-out ${loading ? "blur-lg opacity-100" : "blur-0 opacity-100"}`}
             onClick={(e) => e.stopPropagation()}
           />
         </div>
 
         <div className="text-center mt-4 mb-4 px-4 flex-shrink-0">
-          <p className="text-white font-medium text-lg">{image.title}</p>
-          {/* <p className="text-gray-300 text-sm mt-1">{image.category}</p> */}
-          {image.description && (
-            <p className="text-gray-400 text-sm mt-2 mx-auto">
-              {image.description}
+          <p className="text-white font-medium text-lg">{displayedImage.title}</p>
+          {displayedImage.description && (
+            <p className="text-gray-400 text-sm mt-2 max-w-md mx-auto">
+              {displayedImage.description}
             </p>
           )}
         </div>
