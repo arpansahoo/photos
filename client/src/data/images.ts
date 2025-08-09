@@ -22,157 +22,116 @@ import BernStatue from "./images/photo-05.jpg";
 export const images: Image[] = [
   {
     id: "1",
-    title: "Portrait Session",
-    category: "Natural Light",
+    title: "Amber Hour on the Shore",
     imageUrl: BeachAlley,
-    alt: "Portrait photography",
-    description: "Professional headshot with natural lighting"
+    description: "Took this at a boardwalk in New Jersey. My friends at USF hate on Jersey, but I don't know..."
   },
   {
     id: "2",
-    title: "Beach Boat Sunset",
-    category: "Landscape",
+    title: "Breezing By",
     imageUrl: BeachBoatSunset,
-    alt: "Boat at sunset on the beach",
-    description: "A serene sunset view with a boat on the beach"
+    // description: "A serene sunset view with a boat on the beach"
   },
   {    
-    id: "16",
-    title: "Seaman Statue",
-    category: "Monument",
-    imageUrl: Seaman,
-    alt: "Seaman statue in a park",
-    description: "A bronze statue of a seaman standing tall in a city park"
-  },
-  {
-    id: "14",
-    title: "Pilatus Mountain",
-    category: "Landscape",
-    imageUrl: Pilatus,
-    alt: "View of Pilatus mountain in Switzerland",
-    description: "A stunning view of Pilatus mountain with snow-capped peaks"
-  },
-  {
-    id:"10", 
-    title:"Lauterbrunnen Valley",
-    category:"Nature",
-    imageUrl: LauterbrunnenValley,
-    alt:"Lauterbrunnen Valley in Switzerland",
-    description:"A breathtaking view of Lauterbrunnen Valley with waterfalls and mountains"
-  },
-  {
-    id: "15",
-    title: "Pilatus Closeup",
-    category: "Nature",
-    imageUrl: Pilatuscloseup,
-    alt: "Closeup of Pilatus mountain",
-    description: "A detailed view of the rocky terrain of Pilatus mountain"
-  },
-  {
     id: "3",
-    title: "Bern Cityscape",
-    category: "Urban",
-    imageUrl: BernCityScape,
-    alt: "Cityscape of Bern, Switzerland",
-    description: "A panoramic view of Bern's skyline"
-  },
-  {
-    id: "12",
-    title: "Paris Street Light",
-    category: "Cityscape",
-    imageUrl: ParisStreetLight,
-    alt: "Street light in Paris",
-    description: "A classic Parisian street light illuminating a cobblestone street"
-  },
-  {
-    id: "19",
-    title: "Bern Statue Street",
-    category: "Urban",
-    imageUrl: BernStatue,
-    alt: "Statue on a street in Bern, Switzerland",
-    description: "A historic statue standing proudly on a street in Bern"
-  },
-  {
-    id: "9",
-    title: "Green Bikes in Amsterdam",
-    category: "Travel Photography",
-    imageUrl: GreenBikes,
-    alt:
-      "Row of green bikes parked along a canal in Amsterdam, Netherlands.",
-    description:
-        "A picturesque scene of green bikes lined up by the canal in Amsterdam"
-  },
-  {
-    id: "7",
-    title: "Ferrari Sports Car",
-    category: "Automotive",
-    imageUrl: Ferrari,
-    alt: "Red Ferrari sports car parked on the street",
-    description: "A stunning red Ferrari parked in an urban setting"
-  },
-  {    
-    id: "17",
-    title: "Soho Street",
-    category: "Urban",
-    imageUrl: Soho,
-    alt: "Street view of Soho in New York City",
-    description: "A bustling street scene in the trendy Soho district of NYC"
-  },
-  {
-    id: "5",
-    title: "Eiffel Tower at Night",
-    category: "Landmark",
-    imageUrl: Eiffel,
-    alt: "Eiffel Tower illuminated at night",
-    description: "The iconic Eiffel Tower glowing in the night sky"
-  },
-  {
-    id: "8",
-    title: "Ferris Wheel at Night",
-    category: "Amusement Park",
-    imageUrl: FerrisWheel,
-    alt: "Ferris wheel illuminated at night in an amusement park",
-    description:
-      "A vibrant Ferris wheel lighting up the night sky at an amusement park"
-  },
-  {
-    id: "13",
-    title: "Peabody Hotel",
-    category: "Architecture",
-    imageUrl: Peabody,
-    alt: "Exterior of the Peabody Hotel",
-    description: "The grand facade of the historic Peabody Hotel"
-  },
-  {
-    id: "11",
-    title: "Met Sculpture",
-    category: "Art",
-    imageUrl: MetSculpture,
-    alt: "Sculpture at the Metropolitan Museum of Art",
-    description: "A striking sculpture displayed at the Met"
+    title: "Saltwater Solitude",
+    imageUrl: Seaman,
+    // description: "A bronze statue of a seaman standing tall in a city park"
   },
   {
     id: "4",
-    title: "Buddybrew Coffee Shop",
-    category: "Architecture",
-    imageUrl: Buddybrew,
-    alt: "Exterior of Buddybrew coffee shop",
-    description: "The modern architecture of Buddybrew coffee shop"
+    title: "The Swiss Views",
+    imageUrl: Pilatus,
+    description: "Took this on top of Mt. Pilatus in Lucerne, Switzerland. It's been my Macbook wallpaper for a while now."
+  },
+  {
+    id:"5", 
+    title:"Lauterbrunnen",
+    imageUrl: LauterbrunnenValley,
+    description:"This valley in Switzerland inspired a young J.R.R. Tolkien."
   },
   {
     id: "6",
-    title: "Ekiben Restaurant Interior",
-    category: "Interior Design",
-    imageUrl: Ekiben,
-    alt: "Interior of Ekiben restaurant",
-    description: "A cozy and stylish interior of Ekiben restaurant"
+    title: "More Mountains",
+    imageUrl: Pilatuscloseup,
+    description: "Enough said."
+  },
+  {
+    id: "7",
+    title: "Bern Cityscape",
+    imageUrl: BernCityScape,
+    description: "Bern, the federal city of Switzerland, is a beautiful place to walk through. They also have a bear pit!"
+  },
+  {
+    id: "8",
+    title: "Ville lumière",
+    imageUrl: ParisStreetLight,
+    description: "The Pont Alexandre III bridge in Paris featured these iconic lamps. Eiffel Tower hanging out in the back."
+  },
+  {
+    id: "9",
+    title: "Bern and the Bears",
+    imageUrl: BernStatue,
+    description: "Still no bears pictured. Respecting their privacy."
+  },
+  {
+    id: "10",
+    title: "Green, Green, Green",
+    imageUrl: GreenBikes,
+    description: "Took this photo in Paris. I love the green theme. Might try to take more monochromatic photos in the future."
+  },
+  {
+    id: "11",
+    title: "Ferrari",
+    imageUrl: Ferrari,
+    description: "I randomly stumbled upon this plaza full of Ferraris in Rome. It was pretty cool."
   },
   {    
+    id: "12",
+    title: "Soho, NYC",
+    imageUrl: Soho,
+    // description: "A bustling street scene in the trendy Soho district of NYC"
+  },
+  {
+    id: "13",
+    title: "Red Skies at the Eiffel",
+    imageUrl: Eiffel,
+    // description: "I did not know that the Eiffel Tower glows at night."
+  },
+  {
+    id: "14",
+    title: "Electric Carousel",
+    imageUrl: FerrisWheel,
+    description: "This is a ferris wheel that I shot with a slow shutter speed to get a motion blur effect. The technique is called light painting."
+  },
+  {
+    id: "15",
+    title: "Peabody Library",
+    imageUrl: Peabody,
+    description: "Peabody Library in Baltimore, Maryland. Photo featured on the front page of The Johns Hopkins News-letter and won 3rd place in a Hopkins photo contest."
+  },
+  {
+    id: "16",
+    title: "The Met",
+    imageUrl: MetSculpture,
+    description: "A sculpture displayed at the Met in NYC."
+  },
+  {
+    id: "17",
+    title: "Buddy Brew",
+    imageUrl: Buddybrew,
+    description: "Buddy Brew Coffee in Tampa, FL. Went with my buddy. I think I watched the entire Pathoma GI chapter while drinking a cold brew here."
+  },
+  {
     id: "18",
-    title: "Sunset Birds",
-    category: "Nature",
+    title: "Ekiben",
+    imageUrl: Ekiben,
+    description: "Ekiben in Baltimore serves up food that everyone in the city loves and was ranked 20th in Yelp's Top 100. This dish is the Spicy Neighborhood Bird, which has curry infused in the breading. A product of Ethiopian and Taiwanese fusion."
+  },
+  {    
+    id: "19",
+    title: "Freedom",
     imageUrl: SunsetBirds,
-    alt: "Silhouettes of birds flying at sunset",
-    description: "A serene sunset with birds flying across the sky"
+    description: "Clearwater Beach, FL. Tried my hardest to capture the silhouette of birds flying by at sunset. This photo is last because I have to defend Jersey."
   },
 ];

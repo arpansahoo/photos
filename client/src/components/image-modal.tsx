@@ -105,7 +105,6 @@ export default function ImageModal({
             loading="lazy"
             onLoad={() => setLoading(false)}
             src={image.imageUrl}
-            alt={image.alt}
             className={`max-w-full max-h-full w-auto h-auto object-contain rounded-lg shadow-2xl transition duration-100 ease-in-out ${loading ? "blur-lg" : "blur-0"}`}
             onClick={(e) => e.stopPropagation()}
           />
@@ -113,9 +112,9 @@ export default function ImageModal({
 
         <div className="text-center mt-4 mb-4 px-4 flex-shrink-0">
           <p className="text-white font-medium text-lg">{image.title}</p>
-          <p className="text-gray-300 text-sm mt-1">{image.category}</p>
+          {/* <p className="text-gray-300 text-sm mt-1">{image.category}</p> */}
           {image.description && (
-            <p className="text-gray-400 text-sm mt-2 max-w-md mx-auto">
+            <p className="text-gray-400 text-sm mt-2 mx-auto">
               {image.description}
             </p>
           )}

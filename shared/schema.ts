@@ -2,9 +2,9 @@ import { z } from "zod";
 
 export const insertImageSchema = z.object({
   title: z.string().min(1, "Title is required"),
-  category: z.string().min(1, "Category is required"),
+  // category: z.string().min(1, "Category is required"),
   imageUrl: z.string().url("Must be a valid URL"),
-  alt: z.string().min(1, "Alt text is required"),
+  // alt: z.string().min(1, "Alt text is required"),
   description: z.string().optional(),
 });
 

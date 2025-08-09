@@ -5,13 +5,12 @@ import type { Image } from "@shared/schema";
 import { images } from "../data/images";
 
 // New LazyImage component with blur effect while loading
-function LazyImage({ src, alt, className }: { src: string; alt: string; className?: string }) {
+function LazyImage({ src, className }: { src: string; className?: string }) {
   const [loading, setLoading] = useState(true);
 
   return (
     <img
       src={src}
-      alt={alt}
       loading="lazy"
       onLoad={() => setLoading(false)}
       className={`${className} transition duration-500 ease-in-out ${loading ? "blur-lg" : "blur-0"}`}
@@ -85,13 +84,12 @@ export default function ImageGallery() {
               >
                 <LazyImage
                   src={image.imageUrl}
-                  alt={image.alt}
                   className="w-full h-full object-cover"
                 />
                 <div className="image-overlay">
                   <div className="text-white text-center">
                     <p className="font-medium">{image.title}</p>
-                    <p className="text-sm opacity-90">{image.category}</p>
+                    {/* <p className="text-sm opacity-90">{image.category}</p> */}
                   </div>
                 </div>
               </div>
