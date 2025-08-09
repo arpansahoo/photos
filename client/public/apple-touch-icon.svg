@@ -1,13 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
-  <rect width="180" height="180" rx="40" fill="#2c2c2c"/>
-  <rect x="27" y="45" width="126" height="90" rx="14" fill="#e6d7c3"/>
-  <circle cx="90" cy="90" r="27" fill="#2c2c2c"/>
-  <circle cx="90" cy="90" r="18" fill="#e6d7c3"/>
-  <rect x="36" y="54" width="14" height="11" rx="3" fill="#2c2c2c"/>
-  <rect x="63" y="36" width="54" height="14" rx="7" fill="#e6d7c3"/>
-  <rect x="76" y="40" width="28" height="7" rx="3" fill="#2c2c2c"/>
-  <rect x="130" y="63" width="9" height="4" rx="2" fill="#2c2c2c"/>
-  <rect x="130" y="72" width="14" height="4" rx="2" fill="#2c2c2c"/>
-  <rect x="130" y="81" width="9" height="4" rx="2" fill="#2c2c2c"/>
-  <rect x="130" y="90" width="14" height="4" rx="2" fill="#2c2c2c"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 180 180">
+  <!-- Generator: Adobe Illustrator 29.6.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 207)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #2c2c2c;
+      }
+
+      .st1 {
+        fill: #e6d7c3;
+      }
+    </style>
+  </defs>
+  <rect class="st0" width="180" height="180" rx="40" ry="40"/>
+  <rect class="st1" x="27" y="45" width="126" height="90" rx="14" ry="14"/>
+  <circle class="st0" cx="90" cy="90" r="27"/>
+  <circle class="st1" cx="90" cy="90" r="18"/>
+  <rect class="st0" x="36" y="54" width="14" height="11" rx="3" ry="3"/>
+  <path class="st1" d="M70,36h40c3.87,0,7,3.13,7,7h0c0,3.87-3.13,7-7,7h-40c-3.87,0-7-3.13-7-7h0c0-3.87,3.13-7,7-7Z"/>
+  <rect class="st0" x="76" y="40" width="28" height="7" rx="3" ry="3"/>
 </svg>
