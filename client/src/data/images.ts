@@ -60,7 +60,7 @@ export const images: Image[] = [
     id: "7",
     title: "Bern Cityscape",
     imageUrl: BernCityScape,
-    description: "Bern, the federal city of Switzerland, is a beautiful place to walk through. They also have a bear pit, not pictured here."
+    description: "Bern, the federal city of Switzerland, is a beautiful place to walk through. They also have a bear pit, not pictured."
   },
   {
     id: "8",
@@ -102,13 +102,13 @@ export const images: Image[] = [
     id: "14",
     title: "Electric Carousel",
     imageUrl: FerrisWheel,
-    description: "This is a ferris wheel that I shot with a slow shutter speed to get a motion blur effect. The technique is called light painting."
+    description: "A carousel that I shot with a slow shutter speed to get a motion blur effect. The technique is called light painting."
   },
   {
     id: "15",
     title: "Peabody Library",
     imageUrl: Peabody,
-    description: "Peabody Library in Baltimore. Photo featured on the front page of The Johns Hopkins News-letter and won 3rd place in a Hopkins photo contest."
+    description: "Peabody Library in Baltimore. Photo featured on the front page of The Johns Hopkins News-Letter. Won 3rd place in a Hopkins photo contest."
   },
   {
     id: "16",
@@ -120,13 +120,13 @@ export const images: Image[] = [
     id: "17",
     title: "Buddy Brew",
     imageUrl: Buddybrew,
-    description: "Buddy Brew Coffee in Tampa. Went with my buddy. I watched the entire Pathoma GI chapter while drinking a cold brew here."
+    description: "Buddy Brew Coffee in Tampa. Went with my buddy. I watched the entire Pathoma GI chapter here while caffeinated."
   },
   {
     id: "18",
     title: "Ekiben",
     imageUrl: Ekiben,
-    description: "Ekiben in Baltimore serves up food that everyone in the city loves and was ranked 20th in Yelp's Top 100. This dish is the Spicy Neighborhood Bird, which has curry infused in the breading. A product of Ethiopian and Taiwanese fusion."
+    description: "Ekiben serves up food that everyone in Baltimore loves and was ranked 20th in Yelp's Top 100. This dish is the Spicy Neighborhood Bird, which has curry infused in the breading. A product of Ethiopian and Taiwanese fusion."
   },
   {    
     id: "19",

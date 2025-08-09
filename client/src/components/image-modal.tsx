@@ -126,7 +126,7 @@ export default function ImageModal({
         <div className="text-center mt-4 mb-4 px-4 flex-shrink-0">
           <p className="text-white font-medium text-lg">{displayedImage.title}</p>
           {displayedImage.description && (
-            <p className="text-gray-400 text-sm mt-2 max-w-lg mx-auto">
+            <p className="text-gray-400 text-sm mt-2 max-w-3xl mx-auto">
               {displayedImage.description}
             </p>
           )}

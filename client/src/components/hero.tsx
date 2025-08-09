@@ -33,7 +33,7 @@ export default function Hero() {
           <span className="text-primary font-medium">Sahoo</span> <span className="text-secondary font-medium">Photography</span>
         </h2>
         <p className="text-xl text-warm-gray font-light leading-relaxed mx-auto">
-          Photographer and developer, crafting visual stories and digital experiences
+          Photographer and programmer, crafting visual stories and digital experiences
         </p>
         <div className="mt-10">
           <button 
