@@ -118,7 +118,7 @@ export default function ImageModal({
             onLoad={handleImageLoad}
             src={image.imageUrl}
             alt={image.title}
-            className={`max-w-full max-h-full w-auto h-auto object-contain rounded-lg shadow-2xl transition duration-200 ease-in-out ${loading ? "blur-lg opacity-100" : "blur-0 opacity-100"}`}
+            className={`max-w-full max-h-full w-auto h-auto object-contain rounded-lg shadow-2xl transition duration-200 ease-in-out ${loading ? "blur-lg opacity-50" : "blur-0 opacity-100"}`}
             onClick={(e) => e.stopPropagation()}
           />
         </div>
@@ -126,7 +126,7 @@ export default function ImageModal({
         <div className="text-center mt-4 mb-4 px-4 flex-shrink-0">
           <p className="text-white font-medium text-lg">{displayedImage.title}</p>
           {displayedImage.description && (
-            <p className="text-gray-400 text-sm mt-2 max-w-md mx-auto">
+            <p className="text-gray-400 text-sm mt-2 max-w-lg mx-auto">
               {displayedImage.description}
             </p>
           )}
