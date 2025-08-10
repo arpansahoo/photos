@@ -7,7 +7,6 @@ import { images } from "../data/images";
 // New LazyImage component with blur effect while loading
 function LazyImage({ src, className }: { src: string; className?: string }) {
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
 
   return (
     <div className="relative w-full h-full bg-gray-200">
@@ -18,17 +17,8 @@ function LazyImage({ src, className }: { src: string; className?: string }) {
         src={src}
         loading="lazy"
         onLoad={() => setLoading(false)}
-        onError={() => {
-          setLoading(false);
-          setError(true);
-        }}
         className={`${className} transition-opacity duration-300 ${loading ? 'opacity-0' : 'opacity-100'}`}
       />
-      {error && (
-        <div className="absolute inset-0 bg-gray-300 flex items-center justify-center">
-          <span className="text-gray-500 text-sm">Failed to load</span>
-        </div>
-      )}
     </div>
   );
 }
