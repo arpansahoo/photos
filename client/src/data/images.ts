@@ -24,7 +24,7 @@ export const images: Image[] = [
     id: "1",
     title: "Amber Hour on the Shore",
     imageUrl: BeachAlley,
-    description: "Took this at a boardwalk in New Jersey. My friends in Florida hate on Jersey, but I don't know..."
+    description: "Took this at a boardwalk in New Jersey."
   },
   {
     id: "2",
@@ -132,6 +132,6 @@ export const images: Image[] = [
     id: "19",
     title: "Freedom",
     imageUrl: SunsetBirds,
-    description: "Clearwater Beach, FL. I tried to capture the birds' silhouettes against the burning sky. This photo is last because I have to defend Jersey, but I must admit the sunsets in Florida are beautiful."
+    description: "Clearwater Beach, FL. I tried to capture the birds' silhouettes against the burning sky."
   },
 ];

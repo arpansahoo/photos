@@ -19,17 +19,10 @@ export default function ImageModal({
   hasNext = false, 
   hasPrevious = false 
 }: ImageModalProps) {
-  const [loading, setLoading] = useState(true);
   const [displayedImage, setDisplayedImage] = useState(image);
-  
-  // Reset loading state when image changes
-  useEffect(() => {
-    setLoading(true);
-  }, [image.id]);
   
   // Update displayed image only after new image loads
   const handleImageLoad = () => {
-    setLoading(false);
     setDisplayedImage(image);
   };
   
@@ -114,11 +107,11 @@ export default function ImageModal({
       <div className="relative flex flex-col max-w-[95vw] max-h-[95vh] w-full h-full">
         <div className="flex-1 flex items-center justify-center min-h-0">
           <img
+            key={image.id}
             loading="lazy"
             onLoad={handleImageLoad}
             src={image.imageUrl}
-            alt={image.title}
-            className={`max-w-full max-h-full w-auto h-auto object-contain rounded-lg shadow-2xl transition duration-200 ease-in-out ${loading ? "blur-lg opacity-100" : "blur-0 opacity-100"}`}
+            className={`max-w-full max-h-full w-auto h-auto object-contain rounded-lg shadow-2xl`}
             onClick={(e) => e.stopPropagation()}
           />
         </div>

@@ -8,8 +8,8 @@ export default function VideoGallery() {
     <section id="videos" className="py-16 lg:py-24 bg-white relative overflow-hidden">
       {/* Floating code snippets specific to videos */}
       <div className="floating-elements">
-        <div className="code-snippet" style={{ top: '20%', animationDelay: '2s' }}>const video = new VideoCapture();</div>
-        <div className="code-snippet" style={{ top: '60%', animationDelay: '5s' }}>render(cinematicMoments);</div>
+        <div className="code-snippet" style={{ top: '22%', animationDelay: '2s' }}>const video = new VideoCapture();</div>
+        <div className="code-snippet" style={{ top: '90%', animationDelay: '5s' }}>render(cinematicMoments);</div>
         {/* <Camera className="camera-float" size={36} style={{ top: '25%', right: '15%', animationDelay: '1s' }} />
         <Code className="camera-float" size={32} style={{ top: '75%', left: '10%', animationDelay: '3s' }} /> */}
       </div>

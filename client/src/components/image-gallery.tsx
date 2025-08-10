@@ -6,14 +6,11 @@ import { images } from "../data/images";
 
 // New LazyImage component with blur effect while loading
 function LazyImage({ src, className }: { src: string; className?: string }) {
-  const [loading, setLoading] = useState(true);
-
   return (
     <img
       src={src}
       loading="lazy"
-      onLoad={() => setLoading(false)}
-      className={`${className} transition duration-500 ease-in-out ${loading ? "blur-lg" : "blur-0"}`}
+      className={`${className}`}
     />
   );
 }
@@ -100,9 +97,9 @@ export default function ImageGallery() {
             <div className="text-center mt-12">
               <button
                 onClick={() => setVisibleCount((prev) => prev + 12)}
-                className="inline-flex items-center px-6 py-3 border border-charcoal text-charcoal font-medium rounded-md hover:bg-charcoal hover:text-white transition-colors duration-200"
+                className="inline-flex items-center px-6 py-3 border border-charcoal text-charcoal font-medium rounded-md hover:bg-charcoal hover:text-white transition-colors duration-300"
               >
-                Load More Images
+                Load More Photos
                 <ChevronDown className="ml-2 w-4 h-4" />
               </button>
             </div>

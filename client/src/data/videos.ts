@@ -20,6 +20,6 @@ export const videos: Video[] = [
     title: "The Challenge of Residency",
     // category: "Travel",
     youtubeId: "4_3-QBgH8Fs",
-    description: "We created a video showcasing the busy life of a resident to highlight the need for engaging, efficient learning tools. We got Top 10 at MedHacks for our idea, got $30k in grant funding, and published a research paper."
+    description: "We created a video showcasing the busy life of a resident to highlight the need for engaging, efficient learning tools. I edited this video overnight in the resident on-call room."
   }
 ];
