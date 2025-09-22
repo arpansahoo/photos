@@ -1,5 +1,3 @@
-import { Twitter, Instagram } from "lucide-react";
-
 export default function Footer() {
   return (
     <footer className="bg-white py-12">
@@ -33,6 +31,19 @@ export default function Footer() {
               <Instagram className="w-5 h-5" />
             </a>
           </div> */}
+          <div className="flex space-x-6">
+            <a 
+              href="https://github.com/arpansahoo/photos" 
+              className="text-warm-gray hover:text-charcoal transition-colors duration-200"
+              aria-label="GitHub"
+              target="_blank" rel="noopener noreferrer"
+            >
+              <svg className="w-6 h-6" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="6" fill="#181717"/>
+                <path fillRule="evenodd" clipRule="evenodd" d="M16 6C10.477 6 6 10.477 6 16c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 16 10.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.337 4.687-4.566 4.936.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.579.688.481C23.138 24.162 26 20.418 26 16c0-5.523-4.477-10-10-10z" fill="#fff"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

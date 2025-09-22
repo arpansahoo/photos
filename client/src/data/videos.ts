@@ -13,7 +13,7 @@ export const videos: Video[] = [
     title: "Welcome to Hopkins",
     // category: "Studio Work",
     youtubeId: "4TKm4owEc1Q",
-    description: "I was hired to make a short congratulatory video for an incoming class at Hopkins. I actually made some lifelong friends by randomly asking them to be in the video."
+    description: "I was hired to make a short congratulatory video for an incoming class at Hopkins. I actually made a few lifelong friends by randomly asking them to be in the video."
   },
   {
     id: "3",
