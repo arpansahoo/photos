@@ -19,7 +19,7 @@ import Soho from "./images/photo-17.jpg";
 import SunsetBirds from "./images/photo-09.jpg";
 import BernStatue from "./images/photo-05.jpg";
 import LeoSteelstacks from "./images/photo-20.jpg";
-
+import KarimPagoda from "./images/photo-21.jpg";
 
 export const images: Image[] = [
   {
@@ -140,6 +140,12 @@ export const images: Image[] = [
     id: "20",
     title: "A Stroll in Steel City",
     imageUrl: LeoSteelstacks,
-    // description: "Clearwater Beach, FL. I tried to capture the birds' silhouettes against the burning sky."
+    description: "Shot near SteelStacks in Bethlehem, PA."
+  },
+  {    
+    id: "21",
+    title: "Quiet Reflection",
+    imageUrl: KarimPagoda,
+    description: "Shot at the Reading Pagoda."
   }
 ];
